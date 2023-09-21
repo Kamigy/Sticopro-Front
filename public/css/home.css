@@ -1,0 +1,91 @@
+#app{
+    background-color: var(--pink);
+}
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.carte {
+    flex: auto;
+    background-color: var(--wheat);
+    width: 100%;
+    bottom: 0;
+    display: block;
+    text-align: center;
+    padding: 40px 30px;
+    color: var(--wheat);
+    border-radius: 40px 40px 0px 0px;
+}
+.carte > p{
+    color: var(--dark);
+    font-size: 15px;
+    text-align: left !important;
+    padding: 0px 0px 10px 0px;
+}
+.carte > button{
+    color: var(--wheat);
+    background-color: var(--pink);
+}
+.title{
+    font-family: var(--font-primary);
+    color: var(--wheat);
+    font-size: 20px;
+    padding: 40px;
+}
+.filterOptions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0; 
+    margin-bottom: 20px; 
+    padding: 5px;
+    color: var(--dark);
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.filterOption.active {
+    border-bottom: 3px solid var(--pink); 
+} 
+.filterOption {
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    font-size: 14px;
+    border-bottom: 1px solid var(--greylight);
+}
+.select-container {
+    background-color: var(--pink);
+    position: relative;
+    margin: 20px 0px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 130px;
+}
+.select-container select {
+    width: 100%;
+    font-size: 13px;
+    background: transparent;
+    border: none;
+    color: var(--wheat);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+.select-container select:focus-visible{
+    outline: 0;
+}
+.select-container::after {
+    content: "▼";
+    font-size: 20px;
+    color: var(--wheat);
+    position: absolute;
+    right: 1rem;
+    top: 45%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}

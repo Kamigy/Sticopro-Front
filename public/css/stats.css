@@ -1,0 +1,37 @@
+#app{
+    background-color: var(--pink);
+}
+.carte {
+    background-color: var(--wheat);
+    height: 86%;
+    width: 100%;
+    max-width: 400px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    text-align: center;
+    padding: 40px 30px;
+    color: var(--wheat);
+    border-radius: 40px 40px 0px 0px;
+}
+.carte > p{
+    color: var(--dark);
+    font-size: 15px;
+    text-align: left !important;
+    padding: 0px 0px 10px 0px;
+}
+.carte > button{
+    color: var(--wheat);
+    background-color: var(--pink);
+}
+.title{
+    font-family: var(--font-primary);
+    color: var(--wheat);
+    font-size: 20px;
+    padding: 10%;
+    text-align: center;
+}
+span{
+    margin: auto;
+    color: var(--dark);
+}

@@ -1,0 +1,253 @@
+#app{
+    background-color: var(--pink);
+}
+.carte {
+    background-color: var(--wheat);
+    height: 86%;
+    width: 100%;
+    max-width: 400px;
+    position: fixed;
+    bottom: 0;
+    display: block;
+}
+.content {
+    flex: auto;
+    background-color: var(--wheat);
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 40px 30px;
+    color: var(--wheat);
+    border-radius: 40px 40px 0px 0px;
+}
+.carte > p{
+    color: var(--dark);
+    font-size: 15px;
+    text-align: left !important;
+    padding: 0px 0px 10px 0px;
+}
+.carte > button{
+    color: var(--wheat);
+    background-color: var(--pink);
+}
+.title{
+    font-family: var(--font-primary);
+    color: var(--wheat);
+    font-size: 20px;
+    padding: 10%;
+    text-align: center;
+}
+
+.titre {
+    font-size: 24px;
+    margin-bottom: 20px; 
+    text-align: left;
+    font-family: 'Dela Gothic One', normal;
+}
+
+
+
+
+
+/* .content {
+    max-height: 100vh; 
+    overflow-y: auto; 
+    padding: 1rem; 
+}
+
+.wine-name-input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem; 
+    border-radius: 4px;
+    border: 1px solid #ccc; 
+    font-family: 'Gilroy-Light', sans-serif; 
+}
+
+.title {
+    font-size: 16px;
+    margin-bottom: 20px; 
+    text-align: left;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+.message {
+    text-align:center;
+    margin-top: 20px;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+.add-wine-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.add-wine-image-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.addDescription {
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.description-textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    padding: 6px;
+}
+
+.validation-button {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #EB6676;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+.validation-button:active {
+    transform: scale(0.95); 
+    background-color: #d9534f; 
+}
+
+
+.dropdowns {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.select-container {
+    background-color: #EB6676;
+    font-size: 12px;
+    border: none;
+    margin-right: 10px;
+    padding: 0.3rem;
+    color: white;
+    position: relative;
+    border-radius: 80px; 
+    font-family: 'Gilroy-Light', sans-serif;
+}
+
+.select-container select {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    padding-right: 2.5rem; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 80px;
+}
+
+.select-container::after {
+    content: "▼";
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    right: 1rem; 
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.addImage-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.addImage-input {
+    font-family: 'Gilroy-Light', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    color: white;
+    border-radius: 15px; 
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto; 
+    padding: 30px; 
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    background-color: var(--pink);
+}
+
+.addImage-input-selector {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.addImage-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px; 
+}
+
+.addImage-image img {
+    max-width: 100%;
+    border-radius: 15px; 
+}
+
+.add-symbol {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; 
+    color: var(--pink); 
+    margin-bottom: 10px; 
+}
+
+.div-selected{
+    display: 'flex';
+    justify-content: 'center';
+    align-items: 'center';
+    margin: 10px 0;
+}
+
+.img-selected{
+    max-width: 300px; 
+    max-height: 300px; 
+    width: 'auto'; 
+    height: 'auto';
+} */

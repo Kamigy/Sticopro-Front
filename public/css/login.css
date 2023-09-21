@@ -1,0 +1,24 @@
+.link {
+  color: var(--pink);
+  text-decoration: none; 
+  font-family: 'Sora', sans-serif;
+  font-weight: bold;
+}
+
+.label {
+  font-family: 'Sora', sans-serif;
+  font-size: 12px;
+}
+
+.down {
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  max-width: 300px;
+} 
+
+.diot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
